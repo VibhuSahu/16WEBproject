@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+
+    background-image: url(images/carBgPink.jpg);
+    filter:grayscale(1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h2 {
+    font-family: "Reddit Mono", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5vw;
+    font-size: 3vw;
+    text-align: center;
+
+}
+.clock {
+    display: flex;
+}
+
+.clock div {
+    margin: 1vw;
+    position: relative;
+}
+
+.clock span {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    display: flex;
+    width: 12vw;
+    height: 8vw;
+    background: gray;
+    opacity: .8;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    text-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
+}
+
+.clock #text {
+    height: 5vw;
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: .1vw;
+    background: red;
+    opacity: 0.9;
+
+}
+
+.clock #ampm {
+    position: absolute;
+    bottom: 0;
+    width: 8vw;
+    height: 5vw;
+    font-size: 4vw;
+    background: aqua;
+    color: black;
+    opacity: 1;
+}
+
