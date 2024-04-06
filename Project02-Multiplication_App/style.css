@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Outfit:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: aqua; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Kode Mono", monospace; /* Font family */
+}
+
+.Quiz-form {
+    background: #FDFDFD;
+    padding: 3vh;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3); /* Box shadow */
+    border-radius: 2vw;
+    margin: 3vw;
+}
+
+
+.score {
+    color: #616C59;
+    text-align: right;
+    font-size: 1.5vw; /* Font size */
+}
+
+.question {
+    color: black;
+    font-size: 2.5vw; /* Font size */
+}
+
+.answer {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 2.5vw; /* Font size */
+    text-align: center;
+    padding: 1vw;
+    border: solid 0.8vw #616C59; /* Border */
+    border-radius: 1.5vw; /* Border radius */
+    color: #616C59;
+}
+
+.answer::placeholder {
+    color: lightgray;
+    font-family: "Kode Mono", monospace;
+}
+
+.submit {
+    background-color: #616C59;
+    color: white;
+    border: none;
+    font-family: "Kode Mono", monospace;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 1.5vw;
+    font-size: 2.5vw; /* Font size */
+    margin: 1.5vw 0;
+    border-radius: 1.5vw; /* Border radius */
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+.submit:hover {
+    filter: brightness(0.8);
+}

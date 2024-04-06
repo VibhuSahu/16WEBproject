@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <link rel="shortcut icon" href="img/123.ico" type="image/x-icon"> <!-- Shortcut icon for the webpage -->
+    <title>Multiplication App</title> <!-- Title of the webpage -->
 </head>
+
 <body>
-    
+
+    <form class="Quiz-form" id="Quiz-form">
+
+        <!-- Display current score -->
+        <h4 class="score" id="score">
+            score: <span class="points">00</span>
+        </h4>
+
+        <!-- Display multiplication question -->
+        <h1 class="question" id="question">
+            What is 2 multiple by 3? 
+        </h1>
+
+
+        <!-- Input field for user's answer -->
+        <input type="text" name="Quiz-form" id="answer" class="answer" placeholder="Enter your answer" autofocus autocomplete="off"> 
+        <!-- Button to submit answer -->
+        <button onclick="checkAnswer()" class="submit" id="submit">Submit</button> <!-- Button to submit answer -->
+    </form>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
+
 </html>
+
+<!-- 1. use of JavaScript local storage or browser storage -->
