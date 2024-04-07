@@ -1,46 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap'); /* Import Google Font */
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: aliceblue;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Set full height of viewport */
+    width: 100vw; /* Set full width of viewport */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Align items vertically at center */
+    justify-content: center; /* Align items horizontally at center */
+    background: aliceblue; /* Set background color */
+    font-family: "Reddit Mono", monospace; /* Use Google Font with fallback to monospace */
+    font-weight: 500; /* Set font weight */
+    font-style: normal; /* Set font style */
 }
 
-
 .btn {
-    background-color: gray;
-    padding: 3vh 6vh;
-    font-size: 5vh;
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.3);
-    border-radius: 2vh;
-    text-decoration: none;
-    color: whitesmoke;
-    position: relative;
-    overflow: hidden;
+    background-color: gray; /* Set background color */
+    padding: 3vh 6vh; /* Set padding */
+    font-size: 5vh; /* Set font size */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.3); /* Add box shadow */
+    border-radius: 2vh; /* Add border radius */
+    text-decoration: none; /* Remove underline for links */
+    color: whitesmoke; /* Set text color */
+    position: relative; /* Set position to relative for pseudo-element */
+    overflow: hidden; /* Hide overflowing content */
 }
 
 .btn::before {
-    content: "";
-    position: absolute;
-    background-color: black;
-    width: 0vh;
-    height: 0vh;
-    left: var(--xpos);
-    top: var(--ypos);
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    transition: width 0.5s, height 0.5s;
+    content: ""; /* Add empty content for pseudo-element */
+    position: absolute; /* Set position to absolute */
+    background-color: black; /* Set background color */
+    width: 0vh; /* Set initial width */
+    height: 0vh; /* Set initial height */
+    left: var(--xpos); /* Set horizontal position using custom CSS variable */
+    top: var(--ypos); /* Set vertical position using custom CSS variable */
+    transform: translate(-50%, -50%); /* Center the pseudo-element */
+    border-radius: 50%; /* Add border radius for circle shape */
+    transition: width 0.5s, height 0.5s; /* Add transition effect */
 }
 
 .btn:hover::before {
-    width: 29vh;
-    height: 29vh;
+    width: 29vh; /* Increase width on hover */
+    height: 29vh; /* Increase height on hover */
 }
 
 .btn span {
-    position: relative;
-    z-index: 1;
+    position: relative; /* Set position to relative for z-index */
+    z-index: 1; /* Set z-index to ensure text is above pseudo-element */
 }

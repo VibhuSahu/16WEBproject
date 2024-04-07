@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap'); /* Import Google Font 'Inconsolata' */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Workbench&display=swap'); /* Import Google Fonts 'Inconsolata' and 'Workbench' */
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Set full height of viewport */
+    width: 100vw; /* Set full width of viewport */
+    background: url(img/iskr.jpg); /* Set background image */
+    background-repeat: no-repeat; /* Do not repeat background image */
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire background */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Align items vertically at center */
+    justify-content: center; /* Align items horizontally at center */
+}
+
+.box {
+    background-color: lightgray; /* Set background color */
+    opacity: 0.7; /* Set opacity */
+    padding: 3vh; /* Set padding */
+    margin: 3vh; /* Set margin */
+    width: 40vw; /* Set width */
+    border-radius: 1%; /* Add border radius */
+    box-shadow: 0 4vh 8vh rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+h1 {
+    text-align: left; /* Align text to the left */
+    font-family: "Workbench", sans-serif; /* Set font family */
+    font-weight: 600; /* Set font weight */
+    font-style: normal; /* Set font style */
+    color: black; /* Set text color */
+}
+
+.textbox {
+    resize: none; /* Disable textarea resizing */
+    font-family: "Inconsolata", monospace; /* Set font family */
+    font-weight: 600; /* Set font weight */
+    color: darkgray; /* Set text color */
+    background: #FDFDFD; /* Set background color */
+    font-style: normal; /* Set font style */
+    width: 100%; /* Set width to 100% */
+    height: 20vh; /* Set height */
+    font-size: 2.5vh; /* Set font size */
+    box-sizing: border-box; /* Include padding and border in total width/height */
+    padding: 1vh; /* Set padding */
+    border: solid 0.3vh darkgray; /* Set border */
+    border-radius: 1%; /* Add border radius */
+}
+
+.counter-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute space between items */
+    padding: 0 0.5vh; /* Set padding */
+    color: rgb(55, 55, 55); /* Set text color */
+    font-size: 2vh; /* Set font size */
+    font-family: "Workbench", sans-serif; /* Set font family */
+    font-weight: 400; /* Set font weight */
+    font-style: normal; /* Set font style */
+}
+
+.total-counter {
+    color: greenyellow; /* Set text color */
+    font-family: "Workbench", sans-serif; /* Set font family */
+    font-weight: 400; /* Set font weight */
+    font-style: normal; /* Set font style */
+}
+
+.remaning {
+    color: orangered; /* Set text color */
+    font-family: "Workbench", sans-serif; /* Set font family */
+    font-weight: 400; /* Set font weight */
+    font-style: normal; /* Set font style */
+}
